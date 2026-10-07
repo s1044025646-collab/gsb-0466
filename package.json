@@ -1,0 +1,24 @@
+{
+  "name": "projectile-solver",
+  "version": "1.0.0",
+  "description": "理想抛球定点到达角与双轨迹核验后端",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc -p tsconfig.test.json && node --test build/test/*.test.js",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js solve --v 10 --g 10 --x 8 --h 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
