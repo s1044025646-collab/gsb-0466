@@ -1,0 +1,21 @@
+{
+  "name": "projectile-solver",
+  "version": "1.0.0",
+  "description": "Ideal projectile target-angle solver with dual-trajectory verification (API + CLI)",
+  "main": "dist/src/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/physics.test.js dist/test/api.test.js",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
+
